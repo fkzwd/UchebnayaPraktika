@@ -137,6 +137,8 @@ public class GraphicForm extends JComponent {
 
     public void setVerticalLines(ArrayList<GraphicPoints> verticalLines) {
         this.verticalLines.clear();
-        this.verticalLines.addAll(verticalLines);
+        if (verticalLines!=null) {
+            this.verticalLines.addAll(verticalLines);
+        }
     }
 }

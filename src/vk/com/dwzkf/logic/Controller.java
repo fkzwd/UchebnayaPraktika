@@ -53,16 +53,16 @@ public class Controller {
     }
 
     public void setInterval(int from, int to){
+        ArrayList<GraphicPoints> verticalLines = new ArrayList<>();
         this.from = from;
         this.to = to;
         Double yFrom = graphicBuilder.getY(from);
         Double yTo = graphicBuilder.getY(to);
         if (yFrom!=null & yTo!=null) {
-            ArrayList<GraphicPoints> verticalLines = new ArrayList<>();
             verticalLines.add(new GraphicPoints((double) from, yFrom));
             verticalLines.add(new GraphicPoints((double) to, yTo));
-            graphicForm.setVerticalLines(verticalLines);
         }
+        graphicForm.setVerticalLines(verticalLines);
         repaint();
     }
 

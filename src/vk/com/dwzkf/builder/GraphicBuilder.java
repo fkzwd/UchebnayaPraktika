@@ -20,6 +20,7 @@ public class GraphicBuilder {
 
     public void setFunction(String function) {
         points.clear();
+        coefficientAndPowers.clear();
         if (isFunction(function)) {
             this.function = function;
             buildPoints();
