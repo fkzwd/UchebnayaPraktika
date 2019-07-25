@@ -43,12 +43,12 @@ public class GraphicForm extends JComponent {
         //Draw point Y
         g.drawLine(centerX-offset, offset, centerX, 0);
         g.drawLine(centerX+offset, offset, centerX, 0);
-        drawNewString(g, Color.RED, "Y", -priceX*0.8, priceY*(rows-1));
+        drawNewString(g, Color.RED, "Y", -priceX, priceY*(rows-0.5));
 
         //Draw point X
         g.drawLine(centerX*2 - offset, centerY-offset, centerX*2, centerY);
         g.drawLine(centerX*2 - offset, centerY+offset, centerX*2, centerY);
-        drawNewString(g, Color.RED, "X", priceX*(cols-0.7), -priceY);
+        drawNewString(g, Color.RED, "X", priceX*(cols-0.5), -priceY);
     }
 
     private void drawSegmentation(Graphics g) {
@@ -58,7 +58,7 @@ public class GraphicForm extends JComponent {
         for (int i = -rows+1; i<rows; i++) {
             g.drawLine((int) (centerX+offset), centerY-i*centerY/rows, (int) (centerX-offset), centerY-i*centerY/rows);
         }
-        drawNewString(g, Integer.toString(priceY), priceX*0.4, priceY*0.7);
+        drawNewString(g, Integer.toString(priceY), priceX/2.0, priceY);
         drawNewString(g, Integer.toString(priceX), priceX, -priceY);
     }
 
@@ -79,16 +79,13 @@ public class GraphicForm extends JComponent {
                 drawNewLine(g, Color.GRAY, verticalLines.get(i).getX(), 0,
                                 verticalLines.get(i).getX(), verticalLines.get(i).getY());
                 drawNewString(g, Color.RED, Double.toString(verticalLines.get(i).getX()),
-                                verticalLines.get(i).getX() - priceX*0.3, priceY * (verticalLines.get(i).getY()>=0.0? -1 : 1));
+                                verticalLines.get(i).getX(), priceY * (verticalLines.get(i).getY()>=0.0? -1 : 1));
             }
         }
     }
 
     private void drawNewLine(Graphics g, double x1, double y1, double x2, double y2) {
-        g.drawLine((centerX + (int) ((double) centerX/cols*x1/priceX)),
-                    (centerY - (int) ((double) centerY/rows*y1/priceY)),
-                    (centerX + (int) ((double) centerX/cols*x2/priceX)),
-                    (centerY - (int) ((double) centerY/rows*y2/priceY)));
+        g.drawLine(getX(x1),getY(y1),getX(x2),getY(y2));
     }
 
     private void drawNewLine(Graphics g, Color color, double x1, double y1, double x2, double y2) {
@@ -99,13 +96,16 @@ public class GraphicForm extends JComponent {
     }
 
     private void drawNewString(Graphics g, String string, double x, double y) {
-        g.drawString(string, (int) (centerX+(double) centerX/cols*x/priceX), (int) (centerY - (double) centerY/rows*y/priceY));
+        FontMetrics fm = g.getFontMetrics();
+        int offsetX = fm.stringWidth(string)/2;
+        int offsetY = (fm.getHeight()-fm.getDescent())/2;
+        g.drawString(string, getX(x) - offsetX, getY(y) + offsetY);
     }
 
     private void drawNewString(Graphics g, Color color, String string, double x, double y) {
         Color color1 = g.getColor();
         g.setColor(color);
-        g.drawString(string, (int) (centerX+(double) centerX/cols*x/priceX), (int) (centerY - (double) centerY/rows*y/priceY));
+        drawNewString(g,string,x,y);
         g.setColor(color1);
     }
 
@@ -140,5 +140,14 @@ public class GraphicForm extends JComponent {
         if (verticalLines!=null) {
             this.verticalLines.addAll(verticalLines);
         }
+    }
+
+    private int getX(double x){
+        return centerX + (int) ((double) centerX/cols*x/priceX);
+    }
+
+    private int getY(double y){
+        return centerY - (int) ((double) centerY/rows*y/priceY);
+
     }
 }

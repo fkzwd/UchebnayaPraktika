@@ -7,12 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f18105c0-b4b3-42f1-bb10-ba92b543cbbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/UchebnayaPraktika_v1_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UchebnayaPraktika_v1.1/META-INF/UchebnayaPraktika_v1.1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vk/com/dwzkf/builder/GraphicBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vk/com/dwzkf/builder/GraphicBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vk/com/dwzkf/gui/GraphicForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vk/com/dwzkf/gui/GraphicForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vk/com/dwzkf/logic/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vk/com/dwzkf/logic/Controller.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,13 +21,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/vk/com/dwzkf/gui/GraphicForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+            <state relative-caret-position="-945">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#5094#5095#0" expanded="true" />
+                <element signature="e#5165#5166#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/vk/com/dwzkf/gui/TopMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="294">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/vk/com/dwzkf/logic/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -65,12 +61,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/vk/com/dwzkf/builder/GraphicBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-268">
+            <state relative-caret-position="252">
               <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1765#1766#0" expanded="true" />
-                <element signature="e#1794#1795#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,8 +107,8 @@
         <option value="$PROJECT_DIR$/src/vk/com/dwzkf/helper/Helper.java" />
         <option value="$PROJECT_DIR$/src/vk/com/dwzkf/logic/DecideFinder.java" />
         <option value="$PROJECT_DIR$/src/vk/com/dwzkf/builder/GraphicBuilder.java" />
-        <option value="$PROJECT_DIR$/src/vk/com/dwzkf/gui/GraphicForm.java" />
         <option value="$PROJECT_DIR$/src/vk/com/dwzkf/logic/Controller.java" />
+        <option value="$PROJECT_DIR$/src/vk/com/dwzkf/gui/GraphicForm.java" />
       </list>
     </option>
   </component>
@@ -130,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -204,7 +199,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,7 +257,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.30786687" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.31240544" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.30786687" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -310,17 +304,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vk/com/dwzkf/model/AspectRatio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vk/com/dwzkf/model/AspectRatio.java" />
     <entry file="file://$PROJECT_DIR$/src/vk/com/dwzkf/model/CoefficientAndPower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -404,18 +388,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vk/com/dwzkf/gui/TopMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vk/com/dwzkf/gui/GraphicForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+        <state relative-caret-position="294">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -424,12 +398,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vk/com/dwzkf/builder/GraphicBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-268">
+        <state relative-caret-position="252">
           <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1765#1766#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -440,6 +412,17 @@
           <caret line="64" column="52" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vk/com/dwzkf/gui/GraphicForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="e#5094#5095#0" expanded="true" />
+            <element signature="e#5165#5166#0" expanded="true" />
           </folding>
         </state>
       </provider>
